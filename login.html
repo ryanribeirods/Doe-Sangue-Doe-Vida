@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Doador - Doe Sangue, Doe Vida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- CABEÇALHO PADRÃO -->
+    <header>
+        <div class="container header">
+            <div class="logo">
+                <h1><img src="img/bloodtype.svg" alt="Icone BloodType" width="28" height="28"> Doe Vida</h1>
+            </div>
+            <nav aria-label="Menu Principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#importancia">Importância</a></li>
+                    <li><a href="index.html#quem-pode-doar">Quem Pode Doar?</a></li>
+                    <li><a href="index.html#onde-doar">Onde Doar?</a></li>
+                    <li><a href="admin.html" class="botao-admin">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <section class="container">
+            <div class="container-formulario">
+                <h2>Acesso do Doador</h2>
+                <p>Cadastro realizado! Informe seu e-mail e senha para acessar sua área.</p>
+
+                <form action="index.html" method="get">
+                    <div class="grupo-campo">
+                        <label for="login-email">E-mail:</label>
+                        <input type="email" id="login-email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="login-senha">Senha:</label>
+                        <input type="password" id="login-senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="grupo-botoes">
+                        <button type="submit" class="btn-primario">Entrar</button>
+                    </div>
+                </form>
+
+                <p class="link-externo">
+                    Ainda não possui cadastro? <a href="cadastro.html">Voltar para o pré-cadastro</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ PADRÃO -->
+    <footer>
+        <div class="container rodape">
+            <p>2026 | Doe Sangue, Doe Vida!</p>
+            <p>Desenvolvido por: Ryan Ribeiro dos Santos <a href="curriculo.html">(Ver Currículo)</a></p>
+        </div>
+    </footer>
+</body>
+</html>
