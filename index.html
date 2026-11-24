@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doe Sangue, Doe Vida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- COMEÇO CABEÇALHO -->
+    <header>
+        <div class="container header">
+            <div class="logo">
+                <!--- ICONE GOTA DE SANGUE -->
+                <h1><img src="img/bloodtype.svg" alt="Icone BloodType" width="28" height="28"> Doe Vida</h1>
+            </div>
+            <nav aria-label="Menu Principal">
+                <ul>
+                    <li><a href="#importancia">Importância</a></li>
+                    <li><a href="#quem-pode-doar">Quem Pode Doar?</a></li>
+                    <li><a href="#onde-doar">Onde Doar?</a></li>
+                    <li><a href="cadastro.html">Cadastrar-se</a></li>
+                    <li><a href="admin.html" class="botao-admin">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- COMEÇO MAIN -->
+    <main>
+        <section class="secao-principal">
+            <div class="container secao-principal">
+                <div class="texto secao-principal">
+                    <h2>Um gesto de amor pode salvar até 4 vidas!</h2>
+                    <p>Os bancos de sangue precisam de reposições diariamente para atender cirurgias, emergências e pacientes em tratamento. Seja um doador regular!</p>
+                    <a href="cadastro.html">Quero ser um doador</a>
+                </div>
+                <div class="imagem secao-principal">
+                    <!-- IMAGEM BANNER PESSOAS DOANDO SANGUE -->
+                    <img src="img/banner-doacao.jpg" alt="Pessoas Doando Sangue">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="importancia" class="secao">
+            <div class="container">
+                <h2>Por que doar sangue é tão importante?</h2>
+                <div class="grid-cartoes">
+                    <article class="cartao">
+                        <h3>Não existe substituto artificial</h3>
+                        <p>Atualmente não há substitutos para o sangue humano.</p>
+                    </article>
+                    <article class="cartao">
+                        <h3>Uma doação ajuda em até 4 áreas</h3>
+                        <p>Após a coleta, o sangue é separado em hemácias, plaquetas, plasma e crioprecipitado, permitindo ajudar até quatro pessoas diferentes.</p>
+                    </article>
+                    <article class="cartao">
+                        <h3>Recuperação rápida do doador</h3>
+                        <p>O volume doado é reposto pelo próprio corpo em até 24 horas para o líquido e em poucas semanas para os glóbulos vermelhos.</p>
+                    </article>
+                </div>
+                <div class="imagem-tipo-sangue">
+                    <img src="img/doa-para-quem.jpg" alt="Tabela de disponibilidade de doar e receber sangue">
+                </div>
+            </div>
+        </section>
+
+        <section id="quem-pode-doar" class="secao-quem-pode-doar">
+            <div class="container">
+                <h2>Requisitos para ser um doador</h2>
+                <p>Antes de comparecer à unidade de coleta, confira se você atende aos critérios básicos estabelecidos pelo Ministério da Saúde:</p>
+                <ul class="lista-requisitos">
+                    <li><strong>Idade:</strong> Ter entre 16 e 69 anos (menores de 18 anos precisam de consentimento formal dos responsáveis).</li>
+                    <li><strong>Peso:</strong> Pesar no mínimo 50 kg.</li>
+                    <li><strong>Saúde:</strong> Estar em boas condições de saúde, sem sintomas de gripe ou resfriado nos últimos 7 dias.</li>
+                    <li><strong>Alimentação:</strong> Estar bem alimentado, evitando comidas gordurosas nas 3 horas que antecedem a doação.</li>
+                    <li><strong>Descanso:</strong> Ter dormido pelo menos 6 horas nas últimas 24 horas.</li>
+                    <li><strong>Documento:</strong> Apresentar documento oficial original com foto (RG, CNH ou Carteira de Trabalho).</li>
+                </ul>
+                <p class="link-externo">
+                    Dúvidas sobre impedimentos temporários (tatuagens, vacinas ou medicamentos)?
+                    <br>
+                    <a href="https://www.saude.pr.gov.br/Pagina/Doacao-de-Sangue" target="_blank" rel="noopener noreferrer">
+                        Consulte o guia completo da Secretaria de Saúde do Paraná (Hemepar)</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="onde-doar" class="secao-onde-doar">
+            <div class="container-onde-doar">
+                <div class="informacao-local">
+                    <h2><img src="img/ponto-localizacao.svg" alt="Ícone ponto de localização"> Onde doar em Cornélio Procópio</h2>
+                    <p>As coletas na cidade são realizadas pela <strong>Unidade de Coleta e Transfusão (UCT) de Cornélio Procópio</strong>, integrada à rede Hemepar:</p>
+
+                    <address class="dados-unidade">
+                        <p><strong>Endereço:</strong> Rua Justino Marquês Bonfim, nº 27 | Cornélio Procópio - PR</p>
+                        <p><strong>Horário de Coleta:</strong> Segunda a sexta-feira, das 07h30 às 10h50.</p>
+                        <p><strong>Telefone para contato:</strong> (43) 3520-3500</p>
+                    </address>
+                    <p><em>Entre em contato por telefone para confirmar a disponibilidade de horários e evitar filas.</em></p>
+                </div>
+                <div class="imagem-local-doacao"> 
+                    <img src="img/fachada-uct.png" alt="Imagem da fachada da Unidade de Coleta e Transfusão de Cornélio Procópio">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--- COMEÇO RODAPE -->
+    <footer>
+        <div class="container-rodape">
+            <p>2026 | Doe Sangue, Doe Vida!</p>
+            <p>Desenvolvido por: Ryan Ribeiro dos Santos <a href="curriculo.html">(Ver Currículo)</a></p>
+        </div>
+    </footer>
+</body>
+</html>
