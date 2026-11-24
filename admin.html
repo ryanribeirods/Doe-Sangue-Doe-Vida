@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração - Doe Sangue, Doe Vida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- CABEÇALHO PADRÃO -->
+    <header>
+        <div class="container header">
+            <div class="logo">
+                <h1><img src="img/bloodtype.svg" alt="Icone BloodType" width="28" height="28"> Doe Vida</h1>
+            </div>
+            <nav aria-label="Menu Principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#importancia">Importância</a></li>
+                    <li><a href="index.html#quem-pode-doar">Quem Pode Doar?</a></li>
+                    <li><a href="index.html#onde-doar">Onde Doar?</a></li>
+                    <li><a href="cadastro.html">Cadastrar-se</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="admin.html" class="botao-admin">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <section class="container">
+            <div class="container-formulario">
+                <h2>Painel Administrativo - Cadastro de Usuários</h2>
+                <p>Cadastre novos usuários ou voluntários da campanha em Cornélio Procópio.</p>
+
+                <!-- FORMULÁRIO DE CADASTRO (2 CAMPOS OBRIGATÓRIOS) -->
+                <form id="form-admin">
+                    <div class="grupo-campo">
+                        <label for="nome-usuario">Nome do Usuário:</label>
+                        <input type="text" id="nome-usuario" name="nome" placeholder="Digite o nome do usuário" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="email-usuario">E-mail:</label>
+                        <input type="email" id="email-usuario" name="email" placeholder="usuario@exemplo.com" required>
+                    </div>
+
+                    <div class="grupo-botoes">
+                        <button type="submit" id="btn-cadastrar" class="btn-primario">Cadastrar</button>
+                        <button type="button" id="btn-limpar" class="btn-secundario">Limpar Campos</button>
+                    </div>
+                </form>
+
+                <hr style="margin: 2rem 0; border: 0; border-top: 1px solid var(--cor-borda);">
+
+                <!-- CONTROLES DE PESQUISA E EXCLUSÃO TOTAL -->
+                <h3>Usuários Cadastrados</h3>
+                
+                <div class="grupo-campo" style="margin-top: 1rem;">
+                    <label for="campo-pesquisa">Pesquisar por Nome ou E-mail:</label>
+                    <input type="text" id="campo-pesquisa" placeholder="Digite para filtrar a lista...">
+                </div>
+
+                <div class="grupo-botoes" style="margin-bottom: 1rem;">
+                    <button type="button" id="btn-excluir-todos" class="btn-perigo">Excluir Todos</button>
+                </div>
+
+                <!-- LISTA NÃO ORDENADA EXIBIDA LOGO ABAIXO DO FORMULÁRIO -->
+                <ul id="lista-usuarios" class="lista-admin"></ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ PADRÃO -->
+    <footer>
+        <div class="container rodape">
+            <p>2026 | Doe Sangue, Doe Vida!</p>
+            <p>Desenvolvido por: Ryan Ribeiro dos Santos <a href="curriculo/index.html">(Ver Currículo)</a></p>
+        </div>
+    </footer>
+
+    <!-- IMPORTAÇÃO DO JAVASCRIPT PURO -->
+    <script src="js/admin.js"></script>
+</body>
+</html>
